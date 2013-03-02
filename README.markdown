@@ -7,13 +7,13 @@ You can clone this project and jump to the "heroku create" step OR create your o
 
     padrino g project $PROJECT_NAME -t rspec -e erb -c less -s jquery -d datamapper -a postgres -b
     cd $PROJECT_NAME/
-    curl "https://gist.github.com/darron/5072031/raw/ab78fd766ab690e551b02c54f41c8b6b32044f57/gistfile1.rb" -o Gemfile
+    curl "https://raw.github.com/darron/heroku-padrino-template/master/Gemfile" -o Gemfile
     # If you're not using rspec/erb/less/datamapper - you may need to edit the Gemfile with those changes.
     bundle install
     padrino g admin
-    curl "https://gist.github.com/darron/5072048/raw/24e4b3a4ba7d626ab5bff1ff6b42c241c080ea5c/gistfile1.rb" -o config/database.rb
-    curl "https://gist.github.com/darron/5072056/raw/384c312cc843b72ef1f076f75b1d8c1f3350c576/gistfile1.rb" -o config/unicorn.rb
-    curl "https://gist.github.com/darron/5072061/raw/9249f1e3f5ff275fb49be1428599df2c0e91ac47/gistfile1.rb" -o Procfile
+    curl "https://raw.github.com/darron/heroku-padrino-template/master/config/database.rb" -o config/database.rb
+    curl "https://raw.github.com/darron/heroku-padrino-template/master/config/unicorn.rb" -o config/unicorn.rb
+    curl "https://raw.github.com/darron/heroku-padrino-template/master/Procfile" -o Procfile
     padrino rake gen
     git init .
     git add .
