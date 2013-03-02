@@ -1,7 +1,7 @@
 Padrino on Heroku
 =================
 
-I wanted to deploy Padrino on Heroku but couldn't find information that worked 100% for me. So I worked through the steps and documentation I could find and build this so I'd never have to do it again.
+I wanted to deploy Padrino on Heroku but couldn't find information that worked 100% for me. So I worked through the steps and documentation I could find and built this so I'd never have to do it again.
 
 You can clone this project and jump to the "heroku create" step OR create your own this way:
 
