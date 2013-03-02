@@ -8,6 +8,7 @@ You can clone this project and jump to the "heroku create" step OR create your o
     padrino g project $PROJECT_NAME -t rspec -e erb -c less -s jquery -d datamapper -a postgres -b
     cd $PROJECT_NAME/
     curl "https://gist.github.com/darron/5072031/raw/ab78fd766ab690e551b02c54f41c8b6b32044f57/gistfile1.rb" -o Gemfile
+    # If you're not useing rspec/erb/less/datamapper - you may need to edit the Gemfile with those changes.
     bundle install
     padrino g admin
     curl "https://gist.github.com/darron/5072048/raw/24e4b3a4ba7d626ab5bff1ff6b42c241c080ea5c/gistfile1.rb" -o config/database.rb
@@ -21,6 +22,9 @@ You can clone this project and jump to the "heroku create" step OR create your o
     git push heroku master
     heroku run rake dm:migrate
     heroku run rake seed
+    # For local development
+    padrino rake dm:migrate
+    padrino rake seed
 
 When deployed this app:
 
